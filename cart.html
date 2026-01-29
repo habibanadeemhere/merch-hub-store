@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart 🛒</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+<div id="loader">
+  <div class="loader-text">
+    <span>K</span>
+    <span>P</span>
+    <span>O</span>
+    <span>P</span> &nbsp;
+    <span>M</span>
+    <span>E</span>
+    <span>R</span>
+    <span>C</span>
+    <span>H</span>  &nbsp;
+    <span>H</span>
+    <span>U</span>
+    <span>B</span>
+
+  </div>
+</div>
+
+
+
+<!--__________________Navbar__________________________-->
+
+
+<nav class="navbar navbar-expand-lg" data-aos="zoom-in" data-aos-duration="1000" style="background-color: #000000;">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+
+    <a class="navbar-brand" href="#">
+      <img class="kpop-brand" src="images/kpop (1).png" alt="Logo" style="height:50px;">
+      
+    </a>
+ <p class="p2">Welcome, <span id="name">Guest</span>!</p>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cart 🛒</a></li>
+        <li class="nav-item"><a id="adminlink" class="nav-link" href="admin.html">Admin Dashboard</a></li>
+      </ul>
+    </div>
+
+
+    <a class="navbar-brand" href="#">
+      <img class="kpop-brand" src="images/kpop (2).png" alt="Logo" style="height:50px;">
+    </a>
+   
+
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<br><br><br>
+
+<div class="bg-buttons">
+  <img id="bg1" src="images/bg1.gif" alt="Background 1" class="bg-btn">
+  <img id="bg2" src="images/bg4.gif" alt="Background 2" class="bg-btn">
+  <img id="bg3" src="images/bg3.gif" alt="Background 3" class="bg-btn">
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--_________________Navbar ends_____________________________-->
+
+
+
+<section class="cart-wrapper container">
+  <h2 class="cart-heading">Your Cart 🛒</h2>
+
+  <div id="cartContainer" class="cart-grid"></div>
+
+
+</section>
+
+<script type="module" src="cart.js"></script>
+</body>
+</html>

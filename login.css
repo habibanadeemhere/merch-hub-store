@@ -1,0 +1,106 @@
+:root {
+  --bg-dark: #0B0B0F;
+  --card-bg: rgba(20,0,40,0.95);
+  --pink: #FF4ECF;
+  --purple: #8F5AFF;
+  --white: #FFFFFF;
+  --glow: 0 0 20px rgba(255,78,207,0.8);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #1c0030, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: var(--card-bg);
+  padding: 40px 30px;
+  border-radius: 25px;
+  box-shadow: var(--glow);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+h3 {
+  font-size: 28px;
+  color: var(--pink);
+  text-shadow: 0 0 5px var(--pink), 0 0 15px var(--purple);
+  margin-bottom: 15px;
+}
+
+.mb-3 input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: var(--white);
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.mb-3 input:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 10px var(--pink);
+}
+
+.mb-3 label {
+  color: #ffb0ff;
+}
+
+button {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--pink), var(--purple));
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: var(--glow);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px var(--pink), 0 0 35px var(--purple);
+}
+
+a {
+  color: var(--pink);
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

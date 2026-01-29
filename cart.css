@@ -1,0 +1,141 @@
+
+.cart-wrapper {
+  padding: 50px 10px 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #ff4ecf;
+  text-shadow: 0 0 15px rgba(255,78,207,0.6);
+}
+
+
+.cart-grid {
+display: flex;
+gap: 20px;
+}
+
+
+.product-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 10px 30px rgba(255,78,207,0.25);
+  transition: 0.4s ease;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(255,78,207,0.45);
+}
+
+.product-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.product-card .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff4ecf;
+  margin: 8px 0;
+}
+
+
+.btn-remove {
+  background: transparent;
+  border: 2px solid #ff4ecf;
+  color: #ff4ecf;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-remove:hover {
+  background: #ff4ecf;
+  color: white;
+}
+
+
+.cart-total-box {
+  margin: 60px auto 0;
+  max-width: 500px;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(255,78,207,0.4);
+}
+
+.cart-total-box span {
+  font-size: 18px;
+  color: #ccc;
+}
+
+.cart-total-box strong {
+  display: block;
+  font-size: 32px;
+  color: #ff4ecf;
+  margin: 10px 0 20px;
+}
+
+
+.checkout-btn {
+  background: linear-gradient(135deg, #ff4ecf, #c600a1);
+  border: none;
+  color: white;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff4ecf;
+}
+
+
+
+
+.ring {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 40%;
+  border: 5px dashed #b4579d;
+  pointer-events: none; 
+  animation: ringFade 1s ease-out forwards;
+  z-index: 9999; 
+}
+
+@keyframes ringFade {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(2.5); }
+}
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
