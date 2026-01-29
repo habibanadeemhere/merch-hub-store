@@ -1,0 +1,347 @@
+:root {
+  --bg-dark: #0B0B0F;
+  --bg-card: #1C1C27;
+  --primary: #8F5AFF;
+  --accent: #00E5FF;
+  --text-light: #FFFFFF;
+  --text-muted: #B8B8C9;
+  --shadow-neon: 0 0 25px rgba(143, 90, 255, 0.6);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 10px;
+}
+
+
+.kpop-brand {
+  height: 60px;
+  background-color: #FF4ECF;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.navbar {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 70px;
+
+
+}
+
+.nav-link {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.nav-link:hover {
+  color: #FF4ECF;
+}
+
+
+.navbar-toggler {
+  border-color: #FF4ECF;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,...");
+}
+
+
+
+
+
+
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.contact-section {
+  padding: 80px 8%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 40px;
+  color: var(--primary);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.contact-info i {
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.social-links a {
+  font-size: 22px;
+  color: var(--primary);
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: var(--bg-card);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-neon);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: #15151d;
+  color: var(--text-light);
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: var(--text-muted);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 13px;
+  color: var(--primary);
+  background: var(--bg-card);
+  padding: 0 5px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-neon);
+}
+
+
+.btn-submit {
+  padding: 14px;
+  border: none;
+  border-radius: 50px;
+  background: var(--primary);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #6A35D4;
+  box-shadow: var(--shadow-neon);
+  transform: translateY(-3px);
+}
+
+
+.success-msg {
+  text-align: center;
+  font-size: 18px;
+  color: #4EFF7B;
+}
+
+
+.bg-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.bg-btn {
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid #ff4ecf;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.bg-btn:hover {
+  transform: scale(1.1);
+}
+
+.ring {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 20%;
+  border: 2px solid #752a92;
+  pointer-events: none; 
+  animation: ringFade 1s ease-out forwards;
+  z-index: 9999; 
+}
+
+@keyframes ringFade {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(2.5); }
+}
+
+
+
+.p2 {
+  color: #d807b2;
+}
+
+
+
+
+
+
+
+
+/* Responsive */
+@media(max-width:768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-form, .contact-info {
+    min-width: 100%;
+
+  }
+}
+                    
+
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #ffffff;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #FF4ECF;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+}
+
+
+.navbar-collapse.collapse.show {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+
+  .kpop-brand {
+    height: 40px;
+    margin-bottom: 10px;
+
+  }
+}
+
+
+
+
+
+
+

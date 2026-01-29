@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+<div id="loader">
+  <div class="loader-text">
+    <span>K</span>
+    <span>P</span>
+    <span>O</span>
+    <span>P</span> &nbsp;
+    <span>M</span>
+    <span>E</span>
+    <span>R</span>
+    <span>C</span>
+    <span>H</span>  &nbsp;
+    <span>H</span>
+    <span>U</span>
+    <span>B</span>
+
+  </div>
+</div>
+
+
+
+<!--__________________Navbar__________________________-->
+
+
+<nav class="navbar navbar-expand-lg" data-aos="zoom-in" data-aos-duration="1000" style="background-color: #000000;">
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+
+
+    <a class="navbar-brand" href="#">
+      <img class="kpop-brand" src="images/kpop (1).png" alt="Logo" style="height:50px;">
+      
+    </a>
+ <p class="p2">Welcome, <span id="name">Guest</span>!</p>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Cart 🛒</a></li>
+        <li class="nav-item"><a id="adminlink" class="nav-link" href="admin.html">Admin Dashboard</a></li>
+      </ul>
+    </div>
+
+
+    <a class="navbar-brand" href="#">
+      <img class="kpop-brand" src="images/kpop (2).png" alt="Logo" style="height:50px;">
+    </a>
+   
+
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<br><br><br>
+
+<div class="bg-buttons">
+  <img id="bg1" src="images/bg1.gif" alt="Background 1" class="bg-btn">
+  <img id="bg2" src="images/bg4.gif" alt="Background 2" class="bg-btn">
+  <img id="bg3" src="images/bg3.gif" alt="Background 3" class="bg-btn">
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--_________________Navbar ends_____________________________-->
+
+
+
+
+
+<marquee behavior="scroll" direction="left" scrollamount="6" 
+        style="background: linear-gradient(90deg, #FF4ECF, #9B59B6); 
+               color:white; 
+               padding:10px; 
+               font-family:'Poppins', sans-serif; 
+               font-weight:600; 
+               text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+  Free Shipping on All BTS & Blackpink Merch! | Limited Stock Available!
+</marquee>
+
+
+
+
+<!--_____________________Banner part_____________________________-->
+
+ <h2 class="type"> <span id="typing"></span></h2>
+
+<div class="banner">
+
+  <div class="left" data-aos="fade-right" data-aos-duration="2000">
+    <img class="left-img" src="https://images.squarespace-cdn.com/content/v1/5c3398ebaa49a1b1f53eabdf/1661047168673-LXLLRN9XD73RLE5MQNCP/HOODIE_.JPG" alt="Left Banner">
+  </div>
+
+  <div class="text">
+    <h1>Welcome to KPOP MERCH HUB</h1>
+    <p>Official BTS & Blackpink Merchandise</p>
+    <a href="products.html" class="btn-pink">Shop Now</a>
+  </div>
+
+  <div class="right" data-aos="fade-left" data-aos-duration="2000">
+    <img class="right-img" src="https://ektarfa.online/cdn/shop/products/4_43fb3b89-7c7e-46aa-a71b-a8979ea37553_2048x.jpg?v=1672917931" alt="Right Banner">
+  </div>
+
+</div>
+
+
+
+<!--______________________Banner part ends____________________-->
+<br>
+
+
+
+<!--______________________Featured products start____________________-->
+
+<section class="home-products">
+  <h2 class="section-title pink1"
+
+  >Featured Products</h2>
+
+  <div class="product-container">
+
+    <div class="product-card"  data-aos="flip-left" data-aos-duration="2000">
+      <img src="images/bts hoodie.webp" alt="">
+      <h3>Blackpink Hoodie</h3>
+      <p>Rs 2500</p>
+      <button class="btn-product">Buy Now</button>
+    </div>
+
+    <div class="product-card" data-aos="flip-left" data-aos-duration="2000">
+      <img src="images/btslightstick.jpeg" alt="">
+      <h3>BTS ARMY Bomb Lightstick</h3>
+      <p>Rs 5500</p>
+      <button class="btn-product">Buy Now</button>
+    </div>
+
+    <div class="product-card" data-aos="flip-right" data-aos-duration="2000">
+      <img src="images/blackpinkposter.jpg" alt="">
+      <h3>Blackpink Premium Poster</h3>
+      <p>Rs 900</p>
+      <button class="btn-product">Buy Now</button>
+    </div>
+
+    <div class="product-card" data-aos="flip-right" data-aos-duration="2000">
+      <img src="images/blackpinkalbulm.jfif" alt="">
+      <h3>Blackpink albulm</h3>
+      <p>Rs 1700</p>
+      <button class="btn-product">Buy Now</button>
+    </div>
+
+  </div>
+
+  <div class="see-more-box">
+    <a href="products.html" class="see-more-btn">See More</a>
+  </div>
+</section>
+
+<br>
+<!--______________________Featured products end____________________-->
+
+
+
+
+<!--______________________Categories start____________________-->
+
+
+
+<section class="categories">
+  <h2 class="section-title">Shop by Category</h2>
+
+  <div class="category-container">
+    
+    <div class="category-card" data-aos="fade-up" data-aos-duration="1000">
+      <img src="https://m.media-amazon.com/images/I/81eRBkCDKuL._AC_SL1500_.jpg" alt="BTS Merch">
+      <h3>BTS Merch</h3>
+    </div>
+
+    <div class="category-card" data-aos="fade-up" data-aos-duration="1200">
+      <img src="https://m.media-amazon.com/images/I/71tsVWB7Y7L._AC_UY1000_.jpg" alt="Blackpink Merch">
+      <h3>Blackpink Merch</h3>
+    </div>
+
+    <div class="category-card" data-aos="fade-up" data-aos-duration="1200">
+      <img src="https://shplaza.kr/cdn/shop/articles/kpop_light_stick_5be61f9e-37d3-414d-9609-951024720318.png?v=1754369934&width=1100" alt="Lightsticks">
+      <h3>Lightsticks</h3>
+    </div>
+
+    <div class="category-card" data-aos="fade-up" data-aos-duration="1000">
+      <img src="https://www.kpopstore.pk/cdn/shop/files/Untitleddesign_1_5a570f8c-36f8-49b9-a644-853a7d5bf6e9.png?v=1736161303" alt="Hoodies & T-shirts">
+      <h3>Hoodies & T-shirts</h3>
+    </div>
+
+  </div>
+</section>
+
+<!--______________________Categories end____________________-->
+
+
+
+<!--______________________View all products sec start____________________-->
+
+<br><br>
+<div class="view-all-container" data-aos="fade-up">
+    <a href="products.html" class="view-all-btn">View All Products →</a>
+</div>
+<br><br>
+
+<!--_____________________View all products sec end_____________________-->
+
+
+
+
+<!--_____________________About sec start_____________________-->
+
+<section class="about-section" data-aos="fade-up">
+  <div class="about-wrapper">
+    
+    <div class="about-img">
+      <img src="images/aboutkpop.webp" alt="About KPOP">
+    </div>
+
+    <div class="about-text">
+      <h2>About KPOP Merch Hub</h2>
+      <p>
+        Explore premium-quality BTS and Blackpink merchandise. 
+        From albums to lightsticks and clothing — shop your favorite 
+        K-pop collections with fast delivery and trusted products.
+      </p>
+      <a href="https://www.masterclass.com/articles/what-is-kpop" class="btn-learn">Learn More</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!--_____________________About sec end_____________________-->
+
+
+<!--_____________________footer start_____________________-->
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>KPOP MERCH HUB</h3>
+      <p>Your trusted store for BTS, Blackpink & K-pop merchandise.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class ="footer-bottom">
+                <p>© 2025 KPOP MERCH HUB | All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<!--_____________________footer end_____________________-->
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="home.js"></script>
+    <script type="module" src="config.js"></script>
+</body>
+
+</html>

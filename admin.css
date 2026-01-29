@@ -1,0 +1,13 @@
+body {
+    background-image: url('images/admin-back.avif');
+    background-size: cover;
+     background-position:center top;
+
+}
+
+.cont {
+    background-color: #a855f7;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
